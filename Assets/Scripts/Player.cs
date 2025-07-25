@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private InputControl inputActions;
     private Vector2 moveInput;
     public float moveSpeed = 5f;
+    public Animator animator;
 
     private void Awake()
     {
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
+        Vector3 move = new Vector3(moveInput.x, moveInput.y, 0);
         transform.position += move * moveSpeed * Time.deltaTime;
     }
 }
