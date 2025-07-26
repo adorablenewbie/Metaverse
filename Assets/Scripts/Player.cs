@@ -75,4 +75,12 @@ public class Player : MonoBehaviour
             animator.SetBool("isSide", false);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Interactor"))
+        {
+
+        }
+    }   
 }
