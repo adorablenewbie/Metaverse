@@ -29,17 +29,22 @@ public class LoadSceneManager : MonoBehaviour
 
     public void GoMainScene()
     {
-               LoadScene("MainScene");
+        Time.timeScale = 1f; // 게임 시간 재개
+        LoadScene("MainScene");
     }
 
 
     public void StartFlappyBird()
     {
-            LoadScene(flappyBird);
+        Player.playerPosition = new Vector3(0, 29, 0);
+        Time.timeScale = 1f; // 게임 시간 재개
+        LoadScene(flappyBird);
     }
 
     public void StartMiniGame()
     {
+        Player.playerPosition = new Vector3(0, 29, 0);
+        Time.timeScale = 1f; // 게임 시간 재개
         LoadScene(miniGame);
     }
 }

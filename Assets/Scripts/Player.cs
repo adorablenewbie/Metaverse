@@ -5,6 +5,17 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    public static Vector3 playerPosition
+    {
+        get; set;
+    }
+
+    Vector3 startPosition = playerPosition;
+
+    [SerializeField] private float interactRange = 2f;
+    [SerializeField] private LayerMask interactable;
+    private IInteractable currentTarget;
+
     private InputControl inputActions;
     private Vector2 moveInput;
     public float moveSpeed = 5f;
@@ -18,6 +29,11 @@ public class Player : MonoBehaviour
         // 액션 연결
         inputActions.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         inputActions.Player.Move.canceled += ctx => moveInput = Vector2.zero;
+        inputActions.Player.Interaction.performed += _ => TryInteract();
+
+        transform.position = startPosition;
+        playerPosition = new Vector3(0, 0, 0);
+
     }
     private void OnEnable()
     {
@@ -34,6 +50,7 @@ public class Player : MonoBehaviour
         transform.position += move * moveSpeed * Time.deltaTime;
 
         PlayerControls();
+        CheckForInteractables();
     }
 
     void PlayerControls()
@@ -75,12 +92,26 @@ public class Player : MonoBehaviour
             animator.SetBool("isSide", false);
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void CheckForInteractables()
     {
-        if (collision.CompareTag("Interactor"))
-        {
+        currentTarget = null;
 
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactRange, interactable);
+        foreach (var hit in hits)
+        {
+            var interactable = hit.GetComponent<IInteractable>();
+            if (interactable != null)
+            {
+                currentTarget = interactable;
+                // UI 등에 interactable.GetInteractPrompt() 로 안내 출력 가능
+                break;
+            }
         }
-    }   
+    }
+
+    private void TryInteract()
+    {
+        currentTarget?.Interact();
+    }
+
 }
