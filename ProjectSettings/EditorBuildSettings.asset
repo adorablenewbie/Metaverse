@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FlappyBirdScene.unity
     guid: 47a3d07c74b64074bb0bd46e2e431dab
+  - enabled: 1
+    path: Assets/Scenes/HideAndSeekScene.unity
+    guid: 7c4c1ebfeaf662944ae21f3e950d8443
   m_configObjects: {}

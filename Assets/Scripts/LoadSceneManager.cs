@@ -8,7 +8,7 @@ public class LoadSceneManager : MonoBehaviour
     public static LoadSceneManager Instance { get; private set; }
 
     public string flappyBird = "FlappyBirdScene";
-    public string miniGame;
+    public string miniGame = "HideAndSeekScene";
 
     void Awake()
     {
