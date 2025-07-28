@@ -2571,10 +2571,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2660,8 +2660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 180}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 0, y: 420}
+  m_SizeDelta: {x: 300, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317725554
 MonoBehaviour:
@@ -2685,10 +2685,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3d04623be41fae34fa95b5e157ac3fbb, type: 3}
-    m_FontSize: 24
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 4
     m_MaxSize: 41
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -126613,10 +126613,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 764033887}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 800, y: 600}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1303183606
 MonoBehaviour:
@@ -225158,6 +225158,9 @@ MonoBehaviour:
   chekcObj: {fileID: 41458999}
   heo: {fileID: 2727295011987449314, guid: f4e519fc6abfcff4b8a0027024e22eee, type: 3}
   jeong: {fileID: 5587554978566473041, guid: c819de37340ed314897d9d888aeeee50, type: 3}
+  choo: {fileID: 4594631206802975012, guid: e96d02a60ba46c047b1fd60ce3bce193, type: 3}
+  kang: {fileID: 326222351837408729, guid: ac400d5566487414087e4ef359481fe8, type: 3}
+  lee: {fileID: 7128088844453027483, guid: 1ad0e925de96e7549af17c62457eb7cb, type: 3}
   hideAndSeekMode: 0
 --- !u!4 &1826164001
 Transform:

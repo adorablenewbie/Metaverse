@@ -20,6 +20,9 @@ public class HASGameManager : MonoBehaviour
 
     public GameObject heo;
     public GameObject jeong;
+    public GameObject choo;
+    public GameObject kang;
+    public GameObject lee;
 
     public HideAndSeekMode hideAndSeekMode;
 
@@ -38,6 +41,9 @@ public class HASGameManager : MonoBehaviour
     {
         spawnNPC.Spawn(heo, chekcObj);
         spawnNPC.Spawn(jeong, chekcObj);
+        spawnNPC.Spawn(lee, chekcObj);
+        spawnNPC.Spawn(choo, chekcObj);
+        spawnNPC.Spawn(kang, chekcObj);
         hideAndSeekMode = HideAndSeekMode.Playing;
         
     }
