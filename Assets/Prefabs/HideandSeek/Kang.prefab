@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7917904493958206767}
   - component: {fileID: 7563206277338380840}
   - component: {fileID: 1983186867604990417}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Kang
   m_TagString: Kang
   m_Icon: {fileID: 0}

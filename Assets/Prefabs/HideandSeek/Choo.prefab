@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 2417731184152215535}
   - component: {fileID: 4658184531347452196}
   - component: {fileID: 7262840456906642838}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Choo
   m_TagString: Choo
   m_Icon: {fileID: 0}

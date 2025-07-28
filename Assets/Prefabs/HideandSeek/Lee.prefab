@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 1954110853694052425}
   - component: {fileID: 1729219535151859887}
   - component: {fileID: 3108328776369164406}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lee
   m_TagString: Lee
   m_Icon: {fileID: 0}
